@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Landerz &mdash; Website by Colorlib</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150693855-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150693855-1');
+    </script>
+
+    <title>E-Shirt</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -163,6 +173,7 @@
     </div>
 
 
+    
     <div class="site-section" id="contact-section">
       <div class="container">
         <div class="row mb-5">
@@ -173,8 +184,37 @@
 
         <div class="row justify-content-center">
             <span><input id="name" type="email" placeholder="Eg. me@eshirt.com"/></span>
-              <a href="#" class="btn btn-small" style="margin-left:20px">YES!</a>
+              <button onclick="ga('emailSend', 'event', 'actions', 'play', 'emailID', '');" 
+               class="btn btn-small" style="margin-left:20px">YES!</a>
         </div>
+
+        
+
+<!-- 
+         <form method="post" action="https://mallikakhullar.github.io/mse-265-landing-page/" accept-charset="ISO-8859-1" onsubmit="var   originalCharset = document.charset; document.charset = 'ISO-8859-1';
+            window.onbeforeunload = function (){document.charset=originalCharset;};">
+  
+
+          <div class="row form-group">
+            <div class="col-md-12">
+              <label class="text-black" for="email">Email</label> 
+              <input type="email" id="email" class="form-control rounded-0">
+            </div>
+          </div>
+
+
+          <div class="row form-group">
+            <div class="col-md-12">
+              <input type="submit" value="Send Message" class="btn btn-primary mr-2 mb-2">
+            </div>
+          </div>
+
+          <input type="hidden" name="Message" value="ccc@gmail.com" />
+          <input type="hidden" name="recipient" value="mallikapriyak@gmail.com" />
+          <input type="hidden" name="subject" value="Subject" />
+          <input type="hidden" name="required" value="email,Message" />
+
+        </form> -->
       </div>
     </div>
 

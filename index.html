@@ -196,7 +196,7 @@
 
         <div class="row justify-content-center">
             <span><input id="email_holder" type="email" placeholder="Eg. me@eshirt.com"/></span>
-              <button onclick="ga('send', {hitType: 'event', eventCategory: 'User', eventAction: 'sendEmail', eventLabel: 'emailId', eventValue: document.getElementById('email_holder').value });" 
+              <button onclick="ga('send', {hitType: 'event', eventCategory: 'User', eventAction: 'em', eventLabel: 'emailId', eventValue: document.getElementById('email_holder').value }); ga('send', {hitType: 'event', eventCategory: 'User', eventAction: 'em', eventLabel: 'emailId'});" 
                class="btn btn-small" style="margin-left:20px">YES!</a>
         </div>
 

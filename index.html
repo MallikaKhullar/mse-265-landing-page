@@ -77,14 +77,13 @@
             <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">E-Shirt <span class="text-primary">.</span> </a></h1>
           </div>
 
-          <div class="col-12 col-md-10 main-menu">
+          <div class="col-12 col-md-10 main-menu" style='margin:0 auto'>
             <nav class="site-navigation position-relative text-right" role="navigation">
 
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block" style="text-align:center!important">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#features-section" class="nav-link">How E-Shirt Works</a></li>
-                <li><a href="#about-section" class="nav-link">Browse E-Shirt designs</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                <li><a href="#browse-section" class="nav-link">Browse E-Shirt designs</a></li>
+                <li><a href="#benefits-section" class="nav-link">Benefits of E-Shirt</a></li>
               </ul>
             </nav>
           </div>
@@ -126,7 +125,7 @@
 
 
     
-    <div class="feature-big bg-light">
+    <div class="feature-big bg-light" id='browse-section'>
       <div class="container">
         <div class="row mb-5 site-section border-bottom">
           <div class="col-lg-7">
@@ -154,7 +153,7 @@
           </div>
         </div>
 
-        <div class="mt-5 row mb-5 site-section ">
+        <div class="mt-5 row mb-5 site-section" id='benefits-section'>
           <div class="col-lg-7 order-1 order-lg-2">
             <img src="images/222.gif" alt="Image" class="img-fluid" style="margin-top: 120px">
           </div>
@@ -194,9 +193,13 @@
           </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div id='final-box' class="justify-content-center col-12 text-center" style='display:none'>
+            <h3 class="section-sub-title mb-3">Awesome, thanks for your support!</h3>
+          </div>
+
+        <div id="input-box" class="row justify-content-center">
             <span><input id="email_holder" type="email" placeholder="Eg. me@eshirt.com"/></span>
-              <button onclick="ga('send', {hitType: 'event', eventCategory: 'UserInputs', eventAction: 'emailEntered', eventLabel: document.getElementById('email_holder').value });" 
+              <button onclick="ga('send', {hitType: 'event', eventCategory: 'UserInputs', eventAction: 'emailEntered', eventLabel: document.getElementById('email_holder').value }); document.getElementById('input-box').style.display='none'; document.getElementById('final-box').style.display='block'" 
                class="btn btn-small" style="margin-left:20px">YES!</a>
         </div>
 
